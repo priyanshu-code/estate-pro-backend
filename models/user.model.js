@@ -12,7 +12,6 @@ const userSchema = new mongoose.Schema(
     name: {
       type: String,
       required: [true, "Please provide name."],
-      match: [/^[A-Za-z]*$/, "Please only use A-Z characters."],
       maxlength: 100,
     },
     email: {
